@@ -28,7 +28,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 github_username: jdublu10
 twitter_username: alpha_convert 
-linkedin_username: # your LinkedIn user name
+linkedin_username: joseph-cutler-a65a08138
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -38,7 +38,7 @@ research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 
 contact_note: >
-  Feel free to email me, but I'll probably respond faster on Twitter...
+  The best way to reach me is by email-- but I'll probably be faster on twitter.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -46,7 +46,7 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 blog_name: Simply Typed
-blog_description: 
+blog_description: Musings on PL, Math, and whatever else.
 
 # Pagination
 paginate: 4
