@@ -1,0 +1,52 @@
+---
+layout: post
+title:  POPL20 Reflections
+date:   2020-01-05 16:40:16
+description: Experiences from my first conference
+---
+Following the sage advice of [Joomy Korkut](https://twitter.com/cattheory), I've decided to write down some reflections from [POPL2020](http://popl20.sigplan.org/) before they fall out of my head. I've just arrived back in Middletown after a dizzying and exhilarating week in New Orleans, attending my first ever conference. I'm a bit fried, so my writing may not be quite up to par– apologies for any incoherence. I'm going to split this post into two parts to hopefully provide a bit more structure to my thoughts. During the first part, I'm going to discuss my favorite papers and talks– the technical stuff. If you just want to hear about how I fumbled my way through a week of intense socializing, skip to the 2nd part.
+
+
+## Talks
+
+I've seen quite a few conference talks before on YouTube, and I even watched some of POPL2019 over livestream. That being said, attending talks in person is completely different animal. The heat of 100 people in an un-air-conditioned room notwithstanding, I found that the energy of a room has a palpable impact on my ability to follow the talk. I remember the standing-room-only talks much better than those which weren't so well attended, and I don't think this has anything to do with quality, just that a large crowd imparts a different sense of importance on the speaker's words.
+
+I attended more talks than I expected to, mostly because of FOMO. Unfortunately, I stuck mostly to the sessions I thought I had the best chance of understanding due to existing familiarity with the subject (or a friend who could explain it afterwards). In retrospect, I probably should have branched out more on that front.
+
+In no particular order, and with the understanding that my level of understanding on these subjects is limited, here are some talks that I enjoyed:
+  - ["Binders by Day, Labels by Night: Effect Instances via Lexically Scoped Handlers"](https://dl.acm.org/doi/10.1145/3371116): This talk caught me off-guard. I first learned about algebraic effects from Andrej Bauer's lectures from OPLSS18 (on Youtube, I did not attend), and the problem they claim to solve is one that I understood after having only 4 hours of background. The most striking part of the talk was that the solution presented was dead-simple, and perhaps even obvious– adding scoped binders to effect handlers. While I can't comment on the overall quality of the work, the presentation was slick, and very understandable.
+
+  - ["Recurrence Extraction for Functional Programs through Call-by-Push-Value"](https://arxiv.org/abs/1911.04588): I'm pretty biased on this one- this work was done by my advisor and collaborators at Wesleyan, and my current research project is extremely related. If you enjoyed this talk as much as I did, be on the lookout for more work in this project coming soon!
+
+  - ["Seminaïve Evaluation for a Higher-Order Functional Language"](https://www.cl.cam.ac.uk/~nk480/seminaive-datafun.pdf): Another very nice talk which built on existing work I was only vaguely familiar with. I got two very nice take-aways from this talk. Firstly, semi-naive evaluation can be well understood as having the same main idea as BFS– maintain a "frontier" of precisely the data required to compute the next step, and nothing more. The second was a brief but enlightening introduction to incremental lambda calculi and its various operators.
+
+  - ["Par means Parallel: Multiplicative Linear Logic Proofs as Concurrent Functional Programs"](https://hal.archives-ouvertes.fr/hal-02357025/document): I've been casually interested in the session types literature for a year or so now, ever since I came across a series of Frank Pfenning lectures on the subject. This talk did a very nice job of explaining how to integrate the concurrent process computation model with a more standard functional model of computation.
+
+  - ["Interaction Trees: Representing Recursive and Impure Programs in Coq"](https://arxiv.org/abs/1906.00046): I was very excited for this talk (Paul He gave a preview of the project at OPLSS) and it absolutely did not disappoint. While I'm told by my elders that the underlying idea is decades old, ITrees seem like a truly novel way of modeling effectful language semantics. Out of all the talks I attended, this one generated the most discussion afterwards with people all over the field. I'm looking forward to downloading the Coq library and playing with it some time soon.
+
+Here are some talks that I enjoyed, but didn't understand:
+  - ["Semantics of Higher-Order Probabilistic Programs with Conditioning"](https://arxiv.org/abs/1902.11189): This talk had more math than I could handle– and I'm used to being the least math-averse person in the room. The people that did understand the talk seemed very excited about it, though.
+
+  - ["The Fire Triangle: How to Mix Substitution, Dependent Elimination, and Effects"](https://dl.acm.org/doi/10.1145/3371126): My type theory knowledge is pretty barebones, but Pierre-Marie kept it fun with lots of memes, which were well appreciated.
+
+  - ["Taylor Subsumes Scott, Berry, Kahn and Plotkin"](https://dl.acm.org/doi/10.1145/3371069): I went to this talk because the title sounded spicy, but was lost from minute 1. Some day I hope to come back to this paper and have enough background to understand the problem being solved.
+
+
+## Social Time
+
+When I was in high school, I was pretty heavily involved in the web development community in NYC. I went to a few meet ups and conferences, and they were always a bit of a nightmare– the talks were all fine and well, but then the breaks... people were insular, clique-y, and often quite uncomfortable with meeting new people. Despite everyone's insisting that the PL community was open, accepting, and always ready for conversation, I was dubious. I should have listened, because POPL was one of the most welcoming and social events I've ever been to. 
+
+Everyone, from my fellow undergrads all the way up to the most senior researchers, was willing to have a conversation with me, share advice, and discuss research! There is certainly a learning curve to hallway-track etiquette, but people are altogether understanding of first-timers. There were certainly some star-struck moments early on (running into Gordon Plotkin in the elevator was the height of this) but the feelings of shyness around people whose work I admire eventually dissipated as I had more conversations with them. Some of the best conversations I had began with me introducing myself to a researcher, and then asking a question about a specific paper of theirs– it's not a lie that people love to discuss their work, and even moreso to discuss it with an enthusiastic youngster.
+
+PLMW and the Mentoring Breakfasts provided a great environment for meeting people who were in the same stage of their career as I am. I was pleasantly surprised at the number of other undergrads attending PLMW– in the past, I've been to events like OPLSS where the primary audience seems to be grad students. While I love talking to PhD students, I often struggle to relate to their experiences and to participate in discussions about life in grad school. 
+
+Spending time with other undergrads helped me feel at home in the sometimes overwhelming environment that is POPL, and the conversations we had about our shared confusion helped to counteract the flood of impostor syndrome spurred on by being in a room full of more senior people. I've also had an experience at previous undergrad-research-in-CS events where nearly everyone I meet is from R1 institutions with "elite" CS programs. This comes along with conversations where I often struggle to relate to the topics being discusse (job fairs, engineering classes, CS-specific social events). Fortunately, I was joined at POPL by a larger-than-expected contingent of Wesleyan-related folks. [Alex Kavvos](https://lambdabetaeta.eu/) (former postdoc), Caroline Bhupathi (Wes '20), [Jennifer Paykin](https://jpaykin.github.io/) (Wes '12), and [Patricia Johann](http://cs.appstate.edu/~johannp/) (Wes PhD'91) were all in attendance, which allowed for lots of exciting discussion about PL in a liberal arts context that I often lack at such events.
+
+The last PLMW-related thing I must mention is [Kenny Foner](https://very.science/)'s wonderful PLMW talk about mental health in academia– the version from POPL isn't available yet, but in the mean time you can watch the [video of when they gave the same talk at SPLASH last year](https://www.youtube.com/watch?v=9ooa7G7jRd8).
+
+
+Wrap-Up:
+POPL20 was probably the most intense week in recent memory, all for good reasons. I feel like I've come away with a new appreciation for the breadth of interesting work this community has been doing. The numerous talks I attended were all enlightening in one way or the other, even the ones for which only the first 30 seconds were understandable to a newcomer. My reading list has grown tenfold, and it's now less likely than ever that I'll be able to chew through my backlog faster than it grows. Finally, I'd like to thank all of the wonderful people that I'd met and reconnected with– to quote the ever-iconic [Paulette Koronkevich](https://twitter.com/koronkebitch?lang=en): "missing my popl frens 😭".
+
+
+
