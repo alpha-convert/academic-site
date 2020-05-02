@@ -1,0 +1,160 @@
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{plain}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue}
+    \usepackage{a4wide}
+
+
+\linespread{1.0}
+\newcommand{\seplength}{-0.2em} 
+\setlength{\outerbordwidth}{0.05em}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{8.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+\newcommand*\eol[1]{\hspace*{0em plus 1fill}\makebox{#1}}
+
+
+
+\newcommand{\resheading}[1]{\vspace{-5pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded} 
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{2pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.81in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-10pt}
+}
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Joseph W. Cutler} & \href{http://jdublu10.github.io}{http://jdublu10.github.io} \\
+New York, NY & \href{mailto:jwcutler@wesleyan.edu}{jwcutler@wesleyan.edu} \\
+\end{tabular*}
+
+%\resheading{Research Interests}
+
+%Automated complexity analysis, denotational semantics, %category theory and type theory.
+\vspace{2em}
+
+\resheading{Education}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+    \item\textbf{Wesleyan University}, Middletown, CT. \eol{May 2021}
+    \vspace{-9pt}
+    \begin{itemize}
+    \setlength\itemsep{\seplength}
+    \item \textbf{BA}, Double Major: \emph{Computer Science} and \emph{Mathematics}, GPA 3.92/4.00.
+    \end{itemize}
+    \item\textbf{Trevor Day School}, New York, NY. \eol{June 2017} 
+    \vspace{-9pt}
+    \begin{itemize}
+        \setlength\itemsep{\seplength}
+        \item High School Diploma
+    \end{itemize}
+    \vspace{-2pt}
+    
+\end{itemize}
+
+\resheading{Research}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+  \item \emph{Denotational Recurrence Extraction for Amortized Analysis}, \textbf{Joseph W. Cutler}, Daniel R. Licata, and Norman Danner. Submitted.
+\end{itemize}
+
+\resheading{Work Experience}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+
+\item \textbf{Intern}, MPI-SWS (virtual) \eol{Summer 2020}
+
+\item\textbf{University Research Fellow}, Wesleyan University \eol{Summer 2018, 2019}\\
+Did research in cost semantics, working to extend prior work on automated recurrence extraction to deal with amortized analysis. %Proved theorems using logical relations and techniques in semantics. Project was completed and a paper is in preparation.
+
+\item\textbf{Student Forum Leader}, Wesleyan University \eol{Spring 2018}\\
+Lectured on Haskell, alongside a grad student who had designed the course. %Covered the functor/applicative/monad hierarchy, monadic parsing, monad transformers, and more. The course also included guest lectures on category theory by Prof. James Lipton.
+
+
+\item\textbf{Course Assistant}, Wesleyan University \eol{Spring 2018 - Current}\\
+    Graded assignments, led tutor sessions, and aided with labs for the following classes:
+    \vspace{-7pt}
+    \begin{itemize}
+    \setlength\itemsep{\seplength}
+    \item COMP 323 - Programming Language Implementation (Spring 2020)
+    \item COMP 212 - Computer Science II. (Spring 2018, Fall 2018, Spring 2019, Spring 2020)
+    \item MATH 223 - Linear Algebra. (Fall 2019)
+    \item COMP 112 - Introduction To Programming. (Summer 2018)
+    \item WesMASS COMP 211 - Mini-Course Computer Science I. (Summer 2018)
+    \end{itemize}
+    
+       \item\textbf{Teaching Assistant}, Upperline School of Code, NYC \eol{August 2017}
+       \\
+    %Helped students with coding assignments focused on web development in Ruby, and advanced frontend techniques.
+    
+    \item\textbf{Software Development Intern}, Flatiron School, New York, NY: \eol{Summer 2016/17, Winter 2018}\\
+    Worked on Flatiron School's online learning platform, Learn.co.
+  %     \vspace{-10pt}
+
+   % \begin{itemize}
+   %     \setlength\itemsep{\seplength}
+   %     \item Optimized IDE usage monitor by writing highly parallel Elixir code. (Winter 2018)
+   %     \item Built a usage monitoring system for Learn.co's proprietary IDE. Fixed rendering problems with the frontend. (June - July 2017)
+   %     \item Built a system that automatically categorizes issue tickets with Python. Improved internal student progress analytics with ReactJS. (Summer 2016)
+   % \end{itemize}
+    
+    
+ \item\textbf{Teaching Assistant}, Flatiron School, New York, NY \eol{Fall 2014 - Summer 2015}
+ \\
+     %Served as a teaching assistant for Flatiron School's pre-college program. Taught web development with Ruby, along with basic frontend. Courses ran on weekends during the school year, and weekdays during the summer.
+\end{itemize}
+
+\resheading{Awards}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+\item \textit{Shortt Prize}, Awarded to a junior for excellence in mathematics. (2020)
+\item \textit{Robertson Prize}, Awarded to a sophomore for excellence in mathematics. (2019)
+\item \textit{Cornell, Maryland, and Max Planck Pre-Doctoral Research School (CMMRS) Travel Award} (2019)
+\item \textit{Best Project}, Wesleyan University Datafest (April 2019)
+\end{itemize}
+
+\resheading{Attended}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+\item \textit{POPL 2020}, New Orleans, Louisiana (January 2020)\\ with funding from Profs. Licata and Danner
+\item \textit{Cornell, Maryland, Max Planck Pre-doctoral Research School}, Saarbr{\"u}cken, Germany (August 2019)
+\item \textit{Oregon Programming Languages Summer School}, Eugene, OR (June 2019)\\
+with funding from Prof. Licata
+\end{itemize}
+
+\resheading{Service}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+\item \textbf{Computer Science Club Steering Committee}, Wesleyan University (2019-2021)\\
+Planned, organized, and hosted events for the computer science community at Wesleyan
+\end{itemize}
+
+\resheading{Skills}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+\item Programming: Functional programming (Standard ML, Haskell), web development (Ruby, Rails, JavaScript, Frontend MVC Frameworks), \LaTeX, Lower level languages (C, C++).
+\item Other: Unix, Git, and Vim. Beginner knowledge of hobby electronics and Arduino. Conversant in data science methods - familiar with R and related tools.
+\end{itemize}
+
+\end{document}
