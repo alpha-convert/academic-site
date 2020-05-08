@@ -1,0 +1,133 @@
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{plain}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue}
+
+\linespread{1.0}
+\newcommand{\seplength}{-0.2em} 
+\setlength{\outerbordwidth}{0.05em}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{8.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+\newcommand{\resheading}[1]{\vspace{-5pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded} 
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{2pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.81in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-10pt}
+}
+
+\newcommand*\eol[1]{\hspace*{0em plus 1fill}\makebox{#1}}
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Joseph W. Cutler} & \href{http://jdublu10.github.io}{http://jdublu10.github.io} \\
+New York, NY & \href{mailto:jwcutler@wesleyan.edu}{jwcutler@wesleyan.edu} \\
+\end{tabular*}
+
+%\resheading{Research Interests}
+
+%Automated complexity analysis, denotational semantics, %category theory and type theory.
+\vspace{2em}
+
+\resheading{Education}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+    \item\textbf{Wesleyan University}, Middletown, CT \eol{May 2021}
+    \vspace{-5pt}
+    \begin{itemize}
+    \setlength\itemsep{\seplength}
+    \item \textbf{Bachelor of Arts}, Double Major: \emph{Computer Science} and \emph{Mathematics}, GPA 3.79/4.00.
+    \item Course Assistant: Computer Science II, Intro Programming
+    \end{itemize}
+    \item\textbf{Trevor Day School}, New York, NY \eol{June 2017}
+    \vspace{-9pt}
+    \begin{itemize}
+        \setlength\itemsep{\seplength}
+        \item High School Diploma
+    \end{itemize}
+    \vspace{-2pt}
+    
+\end{itemize}
+
+\resheading{Work and Research Experience}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+
+\item\textbf{University Research Fellow}, Wesleyan University, Middletown, CT \eol{Summer 2018}\\
+Research conducted under the supervision of Professor Dan Licata.
+       \vspace{-10pt}
+
+\begin{itemize}
+        \setlength\itemsep{\seplength}
+        \item Developed an affine type system with a modality internalizing the affine structure and associated semantics.
+        \item  Created a translation into a language expressing program cost, proved that the translation was correct with a logical relation
+\end{itemize}
+
+
+
+\item\textbf{Student Forum Leader}, Wesleyan University, Middletown, CT \eol{Spring 2018}\\
+Lectured on Haskell, alongside a grad student who had designed the course.  Topics included the functor/applicative/monad hierarchy, monadic parsing, basic category theory, and much more.
+
+\vspace{5pt}
+    
+    \item\textbf{Software Development Intern}, Flatiron School, NYC \eol{Summer 2016, 2017, Winter 2018}\\
+    Worked on Flatiron School's online learning platform, Learn.co.
+       \vspace{-10pt}
+
+    \begin{itemize}
+        \setlength\itemsep{\seplength}
+        \item Optimized IDE usage monitor by writing highly parallel Elixir code. (Winter 2018)
+        \item Built a usage monitoring system for Learn.co's proprietary IDE. Fixed rendering problems with the frontend. Expanded internal API. (Summer 2017)
+        \item Built a system that automatically categorizes issue tickets with Python. Improved internal student progress analytics with ReactJS. (Summer 2016)
+    \end{itemize}
+    
+    
+ \item\textbf{Teaching Assistant}, Flatiron School, New York, NY \eol{Fall 2014 - Summer 2015}
+ \\
+     Served as a teaching assistant for Flatiron School's pre-college program. Program focused on web development with Ruby, along with basic frontend. Courses ran on weekends during the school year, and weekdays during the summer.
+\end{itemize}
+
+\resheading{Personal Coding Projects}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+\item \href{https://github.com/jdublu10/raytracer}{\textbf{Raytracer}}: Wrote a raytracer in C++ utilizing Blinn-Phong shading and texture mapping.
+\item \href{https://github.com/jdublu10/mastermind/blob/master/src/Main.hs}{\textbf{Mastermind}}: Terminal-based mastermind game in Haskell using monad transformers.
+\end{itemize}
+
+\resheading{Skills}
+\begin{itemize}
+\setlength\itemsep{\seplength}
+\item Programming: Web development (Ruby/Rails, JavaScript, Frontend MVC Frameworks), Functional programming (Haskell, Standard ML, Idris),  \LaTeX, Lower level languages (C, C++).
+\item Other: Unix, Git, and Vim. Beginner knowledge of hobby electronics and Arduino. Conversant in data science methods - familiar with R and related tools.
+\end{itemize}
+
+% \resheading{Service}
+% \begin{itemize}
+% \setlength\itemsep{\seplength}
+% \item\textbf{Upward Bound Math-Science Program}, Wesleyan University (November 2017)\\
+% Taught introduction to web programming to high school students.
+% \end{itemize}
+
+\end{document}
