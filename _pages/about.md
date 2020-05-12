@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Joseph Cutler</strong>
-description: Undergraduate in CS and Math Student at <a href="http://wesleyan.edu/">Wesleyan University</a>
+description: Undergraduate in CS and Math at <a href="http://wesleyan.edu/">Wesleyan University</a>
 
 profile:
   align: right
