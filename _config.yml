@@ -9,7 +9,6 @@ description: > # this means to ignore newlines until "url:"
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -30,7 +29,7 @@ github_username: jdublu10
 twitter_username: alpha_convert 
 linkedin_username: joseph-cutler-a65a08138
 scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
+orcid_id: 0000-0001-9399-9308
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
