@@ -56,4 +56,4 @@ Established in memory of Rae M. Shortt. Awarded to a junior for excellence in ma
 Awarded for excellence in mathematics to a sophomore.
 
 **Cornell, Maryland, Max Planck Pre-doctoral Research School** *(2019)*  
-Awarded travel a grant to Saarbrucken, Germany
+Awarded a travel grant to Saarbrucken, Germany
