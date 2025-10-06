@@ -98,7 +98,7 @@ img.photo {
     max-width: 15%;
     max-height: 15%;
     float: right;
-    margin: 0 0 5px 5px;
+    margin: 10px 0 5px 5px;
     border-radius: 50%;
 }
 
